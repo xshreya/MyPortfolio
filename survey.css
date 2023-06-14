@@ -1,0 +1,62 @@
+#container{
+    color: white;
+}
+#survey-form{
+    border: rgba(17, 73, 9, 0.877);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    margin: auto;
+    width: 50vw;
+    padding: 4%;
+    background-color: rgba(9, 27, 5, 0.808);
+}
+body{
+    background: linear-gradient(90deg, rgba(7, 100, 7, 0.918), rgba(5, 71, 5, 0.932));
+}
+.text-center{
+    text-align: center;
+    font-size: 3em;
+}
+.description{
+    font-size: 140%;
+}
+.input-normal, .input-fieldset{
+    display: block;
+    margin: 20px;
+    margin-top: 5px;
+    margin-left: 0px;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    width: 90%;
+    font-family: sans-serif, serif, Cambria, Cochin, Georgia, Times, 'Times New Roman';
+}
+.input-normal:focus{
+    box-shadow: 0 0 3px 2px rgba(17, 160, 17, 0.877);
+    outline: none;
+    border-color: green;
+}
+.label-text{
+    font-size: 160%;
+    font-weight: 547;
+}
+.input-checkbox, .input-radio{
+    padding: 20px;
+    margin: 10px;
+}
+#comment{
+    height: 120px;
+}
+.reset-button-style, .submit-button-style{
+    cursor: pointer;
+    background-color: rgb(6, 131, 16);
+    padding: 6px;
+    font-size: 20px;
+    color:white;    
+    margin: 15px;
+    width: 90%;
+}
+.reset-button-style:hover, .submit-button-style:hover{
+    background-color: rgb(4, 223, 4);
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+    <style>/*
+    #container{
+        position: relative;
+        border-width: 3px;
+        border-color: rgba(21, 21, 206, 0.801);
+        border-style: solid;
+        padding: 4px 4px 4px 4px;
+        width: 800px;
+        height: auto;
+        margin: auto;
+        border-radius: 10px;
+        background-color: rgba(2, 2, 68, 0.705);
+        height: auto;
+        color: white;
+        line-height: 2;
+        font-weight: 400;
+        font-size: 23px;
+        font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+     body {
+        background-image: linear-gradient(210deg, rgba(52, 52, 146, 0.685), rgba(78, 78, 160, 0.719)), url(images/fffff.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 5px;
+      }
+        label, input, legend, fieldset, textarea {
+            margin: 10px 30px 10px 30px;
+            padding: 10px;
+            display: inline-block;
+            font-size: inherit;
+  line-height: inherit;
+        }
+        textarea{
+            min-height: 120px;
+            width: 100%;
+        }
+      .text-center{
+          margin: auto;
+          text-align: center;
+      }
+      ::placeholder{
+          font-size: 20px;
+      }
+      
+      #reset, #submit{
+        background-color: rgba(45, 45, 204, 0.911);
+        padding: 10px 23px 10px 23px;
+        border-radius: 5%;
+        font-size: 20px;
+        color:white;    
+        margin:20px;
+        cursor: pointer;
+        }
+        .input-normal{
+            display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .input-normal:focus{
+            border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+     button[type = submit]:hover, button[type = reset]:hover, button:hover{
+        background-color: rgba(170, 125, 255, 0.911);
+      }
+      #reset, #submit{
+          cursor: pointer;
+      }*/
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title" class="text-center">|| Survey Form ||</h1>
+            <p id="description" class="description text-center">
+               <i>Thank you for taking time for reviewing us!</i>
+            </p>
+        </header>
+        <br>
+        <form id="survey-form" action="">
+            <div id="form-inputs">
+                <label id="name-label" for="name" class="label-text">
+                    Name: <br>
+                    <input type="text" class="input-normal" name="name" id="name" placeholder="Name" required>
+                </label><br>
+            </div>
+           <div id="form-inputs">
+                <label id="email-label" for="email" class="label-text">
+                    E-mail id: <br>
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="input-normal" required>
+                </label><br>
+            </div>
+            <div id="form-inputs">
+                <label for="number" id="number-label" class="label-text">
+                    Age (Optional): <br>
+                    <input type="number" name="number" id="number" pattern="[0-9]" min="18" max="99" class="input-normal" placeholder="Age">
+                </label>
+            </div>
+            <div id="form-inputs">
+                <label for="experience" id="experience-label" class="label-text">
+                    What is your experience: <br>
+                    <select name="experience" id="dropdown" class="input-normal">
+                        <option disabled selected value>--Select an option--</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Experienced">Experienced</option>
+                        <option value="Highly Experienced">Highly Experienced</option>
+                    </select>
+                </label>
+            </div>
+            <div id="form-inputs">
+                <fieldset id="radio" class="input-fieldset">
+                    <legend class="label-text"> How do you like our platform:</legend>
+                    <label for="worst" class="label-text"><input type="radio" name="name" id="Worst" value="worst" class="input-radio">Worst</label>
+                    <label for="bad" class="label-text"><input type="radio" name="name" id="bad" value="bad" class="input-radio">Bad</label>
+                    <label for="intermediate" class="label-text"><input type="radio" name="name" id="intermediate" value="intermediate" class="input-radio">Intermediate</label>
+                    <label for="good" class="label-text"><input type="radio" name="name" id="good" value="good" class="input-radio">Good</label>
+                    <label for="best" class="label-text"><input type="radio" name="name" id="best" value="best" class="input-radio">Best</label>
+                </fieldset>
+            </div>
+            <div id="form-inputs">
+                <fieldset class="input-fieldset">
+                    <legend class="label-text">What would you like to see improved: (Select all that apply)</legend>
+                    <label for="courses" class="label-text"><input type="checkbox" name="improved" id="improved" value="courses" class="input-checkbox">Courses</label><br>
+                    <label for="front-end" class="label-text"><input type="checkbox" name="improved" id="improved" value="front-end" class="input-checkbox">Front-end Projects</label><br>
+                    <label for="back-end" class="label-text"><input type="checkbox" name="improved" id="improved" value="back-end" class="input-checkbox">Back-end Projects</label><br>
+                    <label for="data entry" class="label-text"><input type="checkbox" name="improved" id="improved" value="data-entry" class="input-checkbox">Data entry</label><br>
+                    <label for="Github" class="label-text"><input type="checkbox" name="improved" id="improved" value="github" class="input-checkbox">Github</label>
+                </fieldset>
+            </div>
+            <div id="form-inputs">
+                <label for="comment" class="label-text input-fieldset">
+                    Enter additional comments or suggestions: <br>
+                    <textarea name="comment" id="comment" placeholder="Enter your comment here..." class="input-normal input-textarea"></textarea>
+                </label>
+            </div>
+            <div id="form-inputs" class="input-button">
+                <button type="reset" id="reset" class="reset-button-style">Reset</button>
+                <button type="submit" id="submit" class="submit-button-style" value="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

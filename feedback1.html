@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="description" content="Culture of Punjab">
+     <meta name="keywords" content="Culture Of Punjab, Punjabi Culture">
+     <meta name="author" content="Shreya">
+     <meta name="viewport" content="width=device-width, initial-scale-1.0">
+     <link rel="stylesheet" href="feedback1.css">
+     <title>Form</title> 
+  </head>
+  <body>
+
+   <div>
+     <header id="form-heading">
+         <h1>|| Feedback Form ||</h1>
+         <p><i>Thank you for taking time for reviewing us!</i></p>
+     </header>
+     <form id="feedback-form">
+         <div id="feedback-inputs">
+             <label for="name" class="label" id="">Enter Name:<br/>
+                 <input type="text" name="name" class="text-input" id="" placeholder="Name" required>
+             </label>
+         </div>
+         <div id="feedback-inputs">
+             <label for="email" id="" class="label">Enter e-mail:<br/>
+                 <input type="email" class="text-input" name="email" id="" placeholder="E-mail" required>
+             </label>
+         </div>
+         <div id="feedback-inputs">
+             <label for="phone-num" id="" class="label">Enter your phone number:<br/>
+                 <input type="tel" class="text-input" name="phone-num" id="" placeholder="Phone Number" required>
+             </label>
+         </div>
+         <div id="feedback-inputs">
+             <label for="age" id="" class="label">Enter Age(Optional):<br/>
+                 <input type="number" pattern="[0-9]" max="100" class="text-input" name="age" id="" placeholder="Age">
+             </label>
+         </div>
+         <div id="feedback-inputs">             
+             <fieldset>
+                 <legend>Select your gender:</legend>
+                 <label for="male" id="" class="label"><input type="radio" class="radio" name="gender" id="radio" value="Male">Male</label><br/>
+                 <label for="female" id="" class="label"><input type="radio" class="radio" name="gender" id="radio" value="Female">Female</label><br/>
+                 <label for="transgender" id="" class="label"><input type="radio" class="radio" name="gender" id="radio" value="Transgender">Transgender</label><br/>
+                 <label for="not-to-say" id="" class="label"><input type="radio" class="radio" name="gender" id="radio" value="Prefer-not-to-say">Prefer not to say</label><br/>
+              </fieldset>
+         </div>
+         <div id="feedback-inputs">             
+             <fieldset>
+                 <legend>Are you satisfied that you find out our website?</legend>
+                 <label for="very-satisfied" id="" class="label"><input type="radio" class="radio" name="gender" id="radio" value="very-satisfied">Very Satisfied</label><br/>
+                 <label for="satisfied" id="" class="label"><input type="radio" class="radio" name="satisfaction" id="radio" value="satisfied">Satisfied</label><br/>
+                 <label for="neutral" id="" class="label"><input type="radio" class="radio" name="satisfaction" id="radio" value="neutral">Neutral</label><br/>
+                 <label for="unsatisfied" id="" class="label"><input type="radio" class="radio" name="satisfaction" id="radio" value="unsatisfied">Unsatisfied</label><br/>
+                 <label for="very-unsatisfied" id="" class="label"><input type="radio" class="radio" name="satisfaction" id="radio" value="very-unsatisfied">Very Unsatisfied</label><br/>
+              </fieldset>             
+         <div id="feedback-inputs">
+             <label for="" id="" class="label">Enter additional comments or suggestions:<br/>
+                 <textarea rows="6" cols="100" name="comment" placeholder="Enter your comments here..." class="text-input"></textarea>
+             </label>
+         </div>
+         <div id="feedback-inputs">
+                 <button type="reset" id="reset" class="reset-button">Reset</button>
+                 <button type="submit" id="submit" class="submit-button">Submit</button>
+         </div>
+    </form>
+   </div>
+  </body>
+</html>
+
+
+
+
+
+

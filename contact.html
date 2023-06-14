@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Culture">
+    <meta name="author" content="Shreya">
+    <meta name="keywords" content="Culture of Punjab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script>
+        function validateForm() {
+          // Get the values of the input fields
+          var name = document.getElementById("name").value.trim();
+          var email = document.getElementById("email").value.trim();
+          var phone = document.getElementById("phone").value.trim();
+          var subject = document.getElementById("subject").value.trim();
+          var message = document.getElementById("message").value.trim();
+          
+          // Define regular expressions for email and phone number validation
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          var phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+          
+          // Check if all fields are filled in
+          if (name === "" || email === "" || phone === "" || subject === "" || message === "") {
+            alert("Please fill in all fields.");
+            return false;
+          }
+          
+          // Check if email is valid
+          if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+          }
+          
+          // Check if phone number is valid
+          if (!phoneRegex.test(phone)) {
+            alert("Please enter a valid phone number in the format ###-###-####.");
+            return false;
+          }
+          
+          // If all validations pass, return true to submit the form
+          return true;
+        }
+        </script>
+
+    <title>Shreya Sharma</title>
+</head>
+<body>
+    <section class="sub-header contact-us-head">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="vs.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1></h1>
+        <h1>Contact Me</h1>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.590198347018!2d76.7662895151321!3d30.758010681628306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed887a3ebcdb%3A0xb9e3d29d8ad76196!2sPanjab%20University%20Chandigarh!5e0!3m2!1sen!2sin!4v1676406852380!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div class="contact-detail">
+                    <div><i class="fa-solid fa-house fa-2xl"></i></div>
+                    <span> 
+                        <h5>Kasturba Hall, Girls Hostel No. 4</h5>
+                        <p>Panjab University, Sector- 14, Chandigarh.</p>
+                    </span>
+                </div>
+                <div class="contact-detail">
+                    <div>
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                    </div>
+                    <span> 
+                        <h5>+91 XXX-XXX-XXXX</h5>
+                        <p>Monday to Friday, 8 AM to 9 PM</p>
+                    </span>
+                </div>
+                <div class="contact-detail">
+                    <div>
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </div>
+                    <span> 
+                        <h5>shreyaa.shrmaa@gmail.com</h5>
+                        <p>Email me for any query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="send.html" onsubmit="return validateForm()">
+                    <input type="text" id="name" placeholder="Enter Name">
+                    <input type="text" id="email" placeholder="Enter E-mail Address">
+                    <input type="text" id="phone" placeholder="Enter Phone number">
+                    <input type="text" id="subject" placeholder="Enter subject">
+                    <textarea id="message" rows="8" placeholder="Message"></textarea>
+                    <button type="Submit" class="wiki blue-btn">Send</button>
+                </form>                  
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h3>Contact Information</h3>
+        <p>Some of my social media links</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/nyxzeuss" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="https://twitter.com/nyxzeus_" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+            <a href="https://instagram.com/nyxzeus_?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/nyxzeus/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://www.telegram.com" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+            <a href="https://github.com/xshreya" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Shreya Sharma.</p>
+    </section>
+</body>
+</html>

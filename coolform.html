@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admission Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="file"], input[type = "email"], input[type="tel"], select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"], input[type="radio "]{
+            margin:5px;
+        }
+
+        input[type="submit"]{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top:18px;
+            margin-bottom:20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #75c579;
+        }
+
+        .white{
+            background-color: white; 
+            border-radius: 5px;
+            padding: 7px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Admission Form</h1>
+		<form action="" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+			<label for="gender">Gender:</label>
+            <div class="white">
+                <label><input type="radio" name="gen" id="gen" value="male">Male</label><br>
+                <label><input type="radio" name="gen" id="gen" value="female">Female</label><br>
+                <label><input type="radio" name="gen" id="gen">Other</label><br>
+            </div>
+            
+			<!-- <select id="gender" name="gender">
+                <option value="default">---ENTER YOUR GENDER---</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select> -->
+
+            <label>Passport size photo:</label>
+            <input type="file" class="white" name="photo" id="photo" required>
+
+            <label>Signature of the applicant:</label>
+            <input type="file" class="white" name="sign" id="sign" required>
+
+            <label for="">Enter your Graduation Course:</label>
+            <select name="course" id="course">
+                <option value="" default>---ENTER YOUR GRADUATION---</option>
+                <option value="bca">Bachelor of Computer Applications</option>
+                <option value="bsc">Bachelor of Science(Computer Science)</option>
+            </select>
+
+            <label for="">Enter your course: </label>
+            <select>
+                <option name="" id="">---SELECT YOUR COURSE---</option>
+                <option name="" id="">MCA</option>
+                <option name="" id="">M.Sc. Computer Science</option>
+            </select> 
+
+            <label for="checkbox">Hobbies:</label>
+            <div class="white">
+                <label for="reading">
+                    <input type="checkbox" id="reading" name="hobbies[]" value="Reading">Reading
+                </label><br>    
+                <label for="music">
+                    <input type="checkbox" id="music" name="hobbies[]" value="Music">Music
+                </label><br>
+                <label for="football">
+                    <input type="checkbox" id="football" name="hobbies[]" value="football">Football
+                </label><br>
+                <label for="cricket">
+                    <input type="checkbox" id="cricket" name="hobbies[]" value="cricket">Cricket
+                </label><br>
+                <label for="chess">
+                    <input type="checkbox" id="chess" name="hobbies[]" value="chess">Chess
+                </label><br>
+            </div>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

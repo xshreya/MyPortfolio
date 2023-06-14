@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+    
+.header{
+    height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(58, 58, 158, 0.418),rgba(58, 58, 158, 0.651)), url(images/imgg.jpg);
+    background-size:cover;
+    background-position: top;
+    position:relative;
+}
+    
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2% 6%;
+}
+    
+.nav-img1{
+    width:50%;
+}
+
+.nav-img2{
+    width:110%;
+}
+  
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 0.2rem 0.5rem;
+    position:relative;
+}
+
+.nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:1.15em;
+}
+
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 0.2em;
+    background: darkblue;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li a:hover::after{
+    width:100%;
+    
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 67%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 4.3em;
+}
+
+.text-box p{
+    margin: 1.15rem;
+    font-size: 1.25rem;
+}
+
+.wiki{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.25rem 1rem;
+    font-size: 1.1rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.wiki:hover{
+    border: 1px solid white;
+    background: darkblue;
+    color: white;
+}
+
+.gallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+h1{
+    font-size: 1.54rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+p{
+    line-height: 1.3rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+    padding: 2rem;
+}
+
+.row{
+    margin-top: 5%;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 32%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.row img{
+    width: 300px;
+    height:200px;
+    border-radius: 1em;
+}
+
+.description{
+    width: 90%;
+    margin: auto;
+    padding-top: 8rem;
+    text-align: justify;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    color: darkslategrey;
+    background-color: rgb(236, 236, 241);
+}
+
+.icons .fa-brands{
+    margin: 1rem;
+    color:darkblue;
+}
+
+
+
+hr{
+    width: 50%;
+    margin: auto;
+}
+
+
+
+/*---------------------------------------------About--------------------------------------------------------------*/
+
+.sub-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(58, 58, 158, 0.534),rgba(58, 58, 158, 0.548)), url(images/imgg2.jpg);
+    background-size:cover;
+    background-position:top;
+    position:relative;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 2.2em;
+    font-size: 1.9em;
+}
+
+		
+table {
+    border-collapse: collapse;
+    margin: 30px 0;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid rgba(0, 0, 139, 0.726);
+    padding: 10px;
+    text-align: left;
+}
+
+.skill-table td{
+    width: 10%;
+}
+
+th {
+    background-color: rgba(0, 0, 139, 0.726);
+    color: white;
+}
+
+
+  
+
+/*------------------------------------------contact------------------------------------------------------------*/
+
+.contact-us-head{
+    background-image: linear-gradient(rgba(58, 58, 158, 0.473),rgba(58, 58, 158, 0.5)), url(images/imgg1.jpg);
+    background-position: top;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.location iframe{
+    width:100%;
+}
+
+.contact-us{
+    width:80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 5rem;
+}
+
+.contact-detail{
+    display:flex;
+    align-items:center;
+    font-size:0.5rem;
+    margin:1rem;
+    border: 1px solid darkblue;
+    padding: 1rem;
+}
+
+.contact-detail .fa-solid{
+    color:darkblue;
+    margin:1rem;
+    margin-right:1.5rem;
+}
+
+.contact-detail p{
+    padding:0;
+    font-weight:200;
+    color:darkslategray;
+    font-size:0.9rem;
+}
+
+.contact-detail h5{
+    color:darkslategray;
+    font-weight: 400;
+    font-size:0.9rem;
+}
+
+.blue-btn{
+   border:1px solid darkblue;
+   color: darkblue;
+}
+
+.contact-col input, .contact-col textarea{
+width:95%;
+padding: 0.2rem;
+margin-bottom: 2rem;
+outline:none;
+border:1px solid darkblue;
+}
